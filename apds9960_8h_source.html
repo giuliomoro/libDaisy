@@ -340,33 +340,33 @@ $(document).ready(function(){initNavTree('apds9960_8h_source.html',''); initResi
 <div class="foldopen" id="foldopen00232" data-start="{" data-end="}">
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="classdaisy_1_1_apds9960.html#a156ad026074df9939292be7155bd4de5">  232</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdaisy_1_1_apds9960.html#a156ad026074df9939292be7155bd4de5">SetADCIntegrationTime</a>(uint16_t iTimeMS)</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    {</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a>;</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        <span class="keywordtype">float</span> temp;</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        <span class="comment">// convert ms into 2.78ms increments</span></div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        <a class="code hl_variable" href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a> = iTimeMS;</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        <a class="code hl_variable" href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a> /= 2.78f;</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        <a class="code hl_variable" href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a> = 256.f - <a class="code hl_variable" href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a>;</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a> &gt; 255.f)</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>            <a class="code hl_variable" href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a> = 255.f;</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a> &lt; 0.f)</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>            <a class="code hl_variable" href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a> = 0.f;</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        temp = iTimeMS;</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        temp /= 2.78f;</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        temp = 256.f - temp;</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        <span class="keywordflow">if</span>(temp &gt; 255.f)</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>            temp = 255.f;</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        <span class="keywordflow">if</span>(temp &lt; 0.f)</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>            temp = 0.f;</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        <span class="comment">/* Update the timing register */</span></div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        <a class="code hl_function" href="classdaisy_1_1_apds9960.html#a14b108aefad148115abb00fb86417148">Write8</a>(<a class="code hl_define" href="apds9960_8h.html#a517cfcae33dfb07301c9e602c566794b">APDS9960_ATIME</a>, (uint8_t)<a class="code hl_variable" href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a>);</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        <a class="code hl_function" href="classdaisy_1_1_apds9960.html#a14b108aefad148115abb00fb86417148">Write8</a>(<a class="code hl_define" href="apds9960_8h.html#a517cfcae33dfb07301c9e602c566794b">APDS9960_ATIME</a>, (uint8_t)temp);</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    }</div>
 </div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
 <div class="foldopen" id="foldopen00253" data-start="{" data-end="}">
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="classdaisy_1_1_apds9960.html#a8badd2d777f8316695706b5b195685e8">  253</a></span>    <span class="keywordtype">float</span> <a class="code hl_function" href="classdaisy_1_1_apds9960.html#a8badd2d777f8316695706b5b195685e8">GetADCIntegrationTime</a>()</div>
 <div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    {</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a>;</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        <span class="keywordtype">float</span> temp;</div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        <a class="code hl_variable" href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a> = <a class="code hl_function" href="classdaisy_1_1_apds9960.html#a5cd389597fe2f129725ca356999005c2">Read8</a>(<a class="code hl_define" href="apds9960_8h.html#a517cfcae33dfb07301c9e602c566794b">APDS9960_ATIME</a>);</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        temp = <a class="code hl_function" href="classdaisy_1_1_apds9960.html#a5cd389597fe2f129725ca356999005c2">Read8</a>(<a class="code hl_define" href="apds9960_8h.html#a517cfcae33dfb07301c9e602c566794b">APDS9960_ATIME</a>);</div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        <span class="comment">// convert to units of 2.78 ms</span></div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        <a class="code hl_variable" href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a> = 256 - <a class="code hl_variable" href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a>;</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        <a class="code hl_variable" href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a> *= 2.78;</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a>;</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        temp = 256 - temp;</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        temp *= 2.78;</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        <span class="keywordflow">return</span> temp;</div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    }</div>
 </div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
@@ -1003,7 +1003,6 @@ $(document).ready(function(){initNavTree('apds9960_8h_source.html',''); initResi
 <div class="ttc" id="aclassdaisy_1_1_system_html_a760572ff8248511b8b5825c8085d33c6"><div class="ttname"><a href="classdaisy_1_1_system.html#a760572ff8248511b8b5825c8085d33c6">daisy::System::Delay</a></div><div class="ttdeci">static void Delay(uint32_t delay_ms)</div></div>
 <div class="ttc" id="anamespacedaisy_html"><div class="ttname"><a href="namespacedaisy.html">daisy</a></div><div class="ttdoc">Hardware defines and helpers for daisy field platform.</div><div class="ttdef"><b>Definition</b> index.h:2</div></div>
 <div class="ttc" id="anamespacedaisy_html_a0f3f80696b55547e8471a18de01b8e13a999faa83b81555dcc0d2922a7a39336c"><div class="ttname"><a href="namespacedaisy.html#a0f3f80696b55547e8471a18de01b8e13a999faa83b81555dcc0d2922a7a39336c">daisy::PORTB</a></div><div class="ttdeci">@ PORTB</div><div class="ttdef"><b>Definition</b> daisy_core.h:178</div></div>
-<div class="ttc" id="aprocess_centroids_8h_html_a905c521e05ec8042631a912b71d0454e"><div class="ttname"><a href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a></div><div class="ttdeci">temp</div><div class="ttdef"><b>Definition</b> processCentroids.h:1</div></div>
 <div class="ttc" id="astructdaisy_1_1_apds9960_1_1_config_html"><div class="ttname"><a href="structdaisy_1_1_apds9960_1_1_config.html">daisy::Apds9960::Config</a></div><div class="ttdef"><b>Definition</b> apds9960.h:139</div></div>
 <div class="ttc" id="astructdaisy_1_1_apds9960_1_1_config_html_a1f83a8dbf530eac100a9630a7c07e2c1"><div class="ttname"><a href="structdaisy_1_1_apds9960_1_1_config.html#a1f83a8dbf530eac100a9630a7c07e2c1">daisy::Apds9960::Config::color_mode</a></div><div class="ttdeci">bool color_mode</div><div class="ttdef"><b>Definition</b> apds9960.h:149</div></div>
 <div class="ttc" id="astructdaisy_1_1_apds9960_1_1_config_html_a2560738f0883253326b9500c9d0fefdb"><div class="ttname"><a href="structdaisy_1_1_apds9960_1_1_config.html#a2560738f0883253326b9500c9d0fefdb">daisy::Apds9960::Config::integrationTimeMs</a></div><div class="ttdeci">uint16_t integrationTimeMs</div><div class="ttdef"><b>Definition</b> apds9960.h:140</div></div>
