@@ -159,7 +159,7 @@ var NAVTREEINDEX =
 "dps310_8h.html#aeebd8a048ab661e5d140f08395dc8243",
 "hal__map_8h_source.html",
 "neopixel_8h.html#a722066abc60b560235b3b22082c2e68e",
-"structdaisy_1_1_sai_handle_1_1_config.html#a68789209ff997e6ca653db010594959b"
+"structdaisy_1_1_sai_handle_1_1_config.html#a68789209ff997e6ca653db010594959ba5bb62b6087bfd1f2707ba56be08c7dce"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

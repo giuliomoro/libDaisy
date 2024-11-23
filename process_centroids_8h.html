@@ -110,23 +110,19 @@ $(document).ready(function(){initNavTree('process_centroids_8h.html',''); initRe
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:acd76b746e5c685c821acd146b2f5cf30" id="r_acd76b746e5c685c821acd146b2f5cf30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_centroids_8h.html#acd76b746e5c685c821acd146b2f5cf30">if</a> (<a class="el" href="process_centroids_8h.html#a9b5b3667ddd2ecbf101819eb465a8582">lastActiveSensor</a> &gt;=LAST_SENSOR_V - FIRST_SENSOR_V &amp;&amp;(((BYTE) <a class="el" href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a>)&lt;&lt; SLIDER_BITS) &gt;=wVCentroid[0])</td></tr>
-<tr class="separator:acd76b746e5c685c821acd146b2f5cf30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9541f19a02a127ded290ea06ccbcf826" id="r_a9541f19a02a127ded290ea06ccbcf826"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_centroids_8h.html#a9541f19a02a127ded290ea06ccbcf826">if</a> (<a class="el" href="process_centroids_8h.html#a9b5b3667ddd2ecbf101819eb465a8582">lastActiveSensor</a> !=255 &amp;&amp;<a class="el" href="process_centroids_8h.html#a9b5b3667ddd2ecbf101819eb465a8582">lastActiveSensor</a> &gt;=LAST_SENSOR_V - FIRST_SENSOR_V &amp;&amp;((unsigned) <a class="el" href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a>)&lt;&lt; SLIDER_BITS &gt;=wVCentroid[0])</td></tr>
+<tr class="separator:a9541f19a02a127ded290ea06ccbcf826"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a905c521e05ec8042631a912b71d0454e" id="r_a905c521e05ec8042631a912b71d0454e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a> = <a class="el" href="calculate_centroids_8h.html#a67a4de5b45f0da9c1d6f95c0d854d565">calculateCentroids</a>(wVCentroid, wVCentroidSize, MAX_NUM_CENTROIDS, FIRST_SENSOR_V, LAST_SENSOR_V, numSensors)</td></tr>
 <tr class="separator:a905c521e05ec8042631a912b71d0454e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa38fcf9b1bce4399f9c378f5a497a643" id="r_aa38fcf9b1bce4399f9c378f5a497a643"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_centroids_8h.html#aa38fcf9b1bce4399f9c378f5a497a643">firstActiveSensor</a> = <a class="el" href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a> &amp; 0xFF</td></tr>
-<tr class="separator:aa38fcf9b1bce4399f9c378f5a497a643"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b5b3667ddd2ecbf101819eb465a8582" id="r_a9b5b3667ddd2ecbf101819eb465a8582"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_centroids_8h.html#a9b5b3667ddd2ecbf101819eb465a8582">lastActiveSensor</a> = <a class="el" href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a> &gt;&gt; 8</td></tr>
 <tr class="separator:a9b5b3667ddd2ecbf101819eb465a8582"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70e3e657b8d13f24f724bbc4c61a260e" id="r_a70e3e657b8d13f24f724bbc4c61a260e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_centroids_8h.html#a70e3e657b8d13f24f724bbc4c61a260e">bActivityDetected</a> = <a class="el" href="process_centroids_8h.html#a9b5b3667ddd2ecbf101819eb465a8582">lastActiveSensor</a> &gt;= 0</td></tr>
-<tr class="separator:a70e3e657b8d13f24f724bbc4c61a260e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="acd76b746e5c685c821acd146b2f5cf30" name="acd76b746e5c685c821acd146b2f5cf30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd76b746e5c685c821acd146b2f5cf30">&#9670;&#160;</a></span>if()</h2>
+<a id="a9541f19a02a127ded290ea06ccbcf826" name="a9541f19a02a127ded290ea06ccbcf826"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9541f19a02a127ded290ea06ccbcf826">&#9670;&#160;</a></span>if()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -134,8 +130,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">if </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="process_centroids_8h.html#a9b5b3667ddd2ecbf101819eb465a8582">lastActiveSensor</a> &gt;=LAST_SENSOR_V - FIRST_SENSOR_V &amp;&amp;(((BYTE) <a class="el" href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a>)&lt;&lt; SLIDER_BITS) &gt;=&#160;</td>
-          <td class="paramname"><em>wVCentroid</em>[0]</td><td>)</td>
+          <td class="paramtype"><a class="el" href="process_centroids_8h.html#a9b5b3667ddd2ecbf101819eb465a8582">lastActiveSensor</a> !&#160;</td>
+          <td class="paramname"> = <code>255&#160;&#160;&amp;&amp;&#160;<a class="el" href="process_centroids_8h.html#a9b5b3667ddd2ecbf101819eb465a8582">lastActiveSensor</a>&#160;&gt;=&#160;LAST_SENSOR_V&#160;-&#160;FIRST_SENSOR_V&#160;&amp;&amp;&#160;((unsigned)<a class="el" href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a>)&#160;&lt;&lt;&#160;SLIDER_BITS&#160;&gt;=&#160;wVCentroid[0]</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -144,34 +140,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a70e3e657b8d13f24f724bbc4c61a260e" name="a70e3e657b8d13f24f724bbc4c61a260e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70e3e657b8d13f24f724bbc4c61a260e">&#9670;&#160;</a></span>bActivityDetected</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bActivityDetected = <a class="el" href="process_centroids_8h.html#a9b5b3667ddd2ecbf101819eb465a8582">lastActiveSensor</a> &gt;= 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa38fcf9b1bce4399f9c378f5a497a643" name="aa38fcf9b1bce4399f9c378f5a497a643"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa38fcf9b1bce4399f9c378f5a497a643">&#9670;&#160;</a></span>firstActiveSensor</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">firstActiveSensor = <a class="el" href="process_centroids_8h.html#a905c521e05ec8042631a912b71d0454e">temp</a> &amp; 0xFF</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a9b5b3667ddd2ecbf101819eb465a8582" name="a9b5b3667ddd2ecbf101819eb465a8582"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9b5b3667ddd2ecbf101819eb465a8582">&#9670;&#160;</a></span>lastActiveSensor</h2>
 
