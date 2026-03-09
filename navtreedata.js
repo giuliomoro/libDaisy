@@ -47,7 +47,7 @@ var NAVTREE =
       [ "Hello World", "md_doc_2md_2__a2___getting-_started-_serial-_printing.html#autotoc_md14", null ],
       [ "String Formatting", "md_doc_2md_2__a2___getting-_started-_serial-_printing.html#autotoc_md15", null ],
       [ "Floating Point Numbers", "md_doc_2md_2__a2___getting-_started-_serial-_printing.html#autotoc_md16", [
-        [ "Using %f specifier", "md_doc_2md_2__a2___getting-_started-_serial-_printing.html#autotoc_md17", null ],
+        [ "Using f specifier", "md_doc_2md_2__a2___getting-_started-_serial-_printing.html#autotoc_md17", null ],
         [ "Using FLT_FMT and FLT_VAR macros", "md_doc_2md_2__a2___getting-_started-_serial-_printing.html#autotoc_md18", null ],
         [ "Using FixedCapStr class", "md_doc_2md_2__a2___getting-_started-_serial-_printing.html#autotoc_md19", null ]
       ] ],
@@ -153,13 +153,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_abstract_menu_8h.html",
-"class_usb_handle.html#a782f2982a91520188f2be5a80c9febb4a26ab786f68f31edaf520641878d210b4",
-"classdaisy_1_1_mapped_value.html#a6170374297209fc14bbc7865438b71a8",
-"classdaisy_1_1_timer_handle.html#aa22a2290d5fb0cc957dc5b06ce21789b",
-"dps310_8h.html#aeebd8a048ab661e5d140f08395dc8243",
-"hal__map_8h_source.html",
-"neopixel_8h.html#a722066abc60b560235b3b22082c2e68e",
-"structdaisy_1_1_sai_handle_1_1_config.html#aafe336101d7c50dd68e2611ccce7c808"
+"class_usb_handle.html#a782f2982a91520188f2be5a80c9febb4a7926eaf0841374d9b4afa7965a75127b",
+"classdaisy_1_1_mapped_value.html#aada8599a26752072c8cafd3c72cfc363",
+"classdaisy_1_1_timer_handle.html#ace505f2c685767f7e9dbb39172646c4e",
+"dps310_8h.html#af0d62aa1d041109b3d762e8e5b50749b",
+"hierarchy.html",
+"neopixel_8h.html#a7b6b551a990b498bed36aadba4a498d5",
+"structdaisy_1_1_sai_handle_1_1_config.html#aafe336101d7c50dd68e2611ccce7c808a7994246c841f7ea31972c7402eddc18d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

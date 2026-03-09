@@ -1,6 +1,6 @@
 var class_centroid_detection =
 [
-    [ "DATA_T", "class_centroid_detection.html#a1a9d70a39e684adba78ef7adfcf2dbae", null ],
+    [ "DATA_T", "class_centroid_detection.html#aea4bb682731c93c17dac257cfbb658d0", null ],
     [ "CentroidDetection", "class_centroid_detection.html#a20aa5be0247fcae6cc6f1505d6fdbe20", null ],
     [ "CentroidDetection", "class_centroid_detection.html#a2626b08e07b444a2eb1eb4e4fcac55d7", null ],
     [ "CentroidDetection", "class_centroid_detection.html#a4ecb1467ba158c9cc4fc72e4705f444a", null ],
